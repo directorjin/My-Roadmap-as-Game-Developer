@@ -10,14 +10,14 @@
 C#basic
 ----
 
-IEnumerable, yield  
-enum in the [Flags] 
-bit operation, shift operation  
-String(Substring(),Replace(),Remove(),Trim())  *string is immutable type*  so be careful of out of memory.  
-StringBuilder(Append()) 
-amespace  
-struct  
-the difference between struct(value) and class(reference). in the method. 
+1. IEnumerable, yield  
+2. enum in the [Flags] 
+3. bit operation, shift operation  
+4. String(Substring(),Replace(),Remove(),Trim())  *string is immutable type*  so be careful of out of memory.  
+5. StringBuilder(Append()) 
+6. namespace  
+7. struct  
+8. the difference between struct(value) and class(reference). in the method. 
   
 
 
