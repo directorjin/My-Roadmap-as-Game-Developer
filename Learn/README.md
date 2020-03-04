@@ -9,11 +9,12 @@
   
   
 <hr/>
-      
+ 
+ <hr>
+ 
 2020-03-04
 =====
 
-<hr>
 C#basic
 ----
 
@@ -26,10 +27,7 @@ amespace
 struct  
 the difference between struct(value) and class(reference). in the method. 
   
-<hr/>
-  
-  
-<hr>
+
 
 UNITY Should Know 
 ----
