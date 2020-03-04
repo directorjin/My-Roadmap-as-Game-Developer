@@ -16,6 +16,7 @@
 <hr>
 C#basic
 ----
+
 IEnumerable, yield  
 enum in the [Flags] 
 bit operation, shift operation  
@@ -26,6 +27,7 @@ struct
 the difference between struct(value) and class(reference). in the method. 
   
 <hr/>
+  
   
 <hr>
 
