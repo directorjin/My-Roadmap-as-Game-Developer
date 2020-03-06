@@ -21,17 +21,7 @@ Dictionary<string,string> cache; //key도 value도 string타입임.
 *important*
 ----------
 
-
-4. Indexer //특정값만 바꿔줄 수 있음 파라미터가 있음	  
-
-public string this[string key] //this가 인덱서의 핵심.	  
-{	  
-	get;		  
-	set;		  
-}	  
-	  
-	  
-5. Property //전체를 바꿔줌 파라미터가 없음. 쓰는 이유는 private로 은닉한 정보를 get하고 set을 설정해서 코드의 가독성을 높이기 위해  
+4. Property //전체를 바꿔줌 파라미터가 없음. 쓰는 이유는 private로 은닉한 정보를 get하고 set을 설정해서 코드의 가독성을 높이기 위해  
   
 public DataTime CacheExpires	  
 {	  
@@ -57,6 +47,31 @@ public void SetSalary(int value)
 변수의 관리는 프로퍼티로 관리하는 것이 좋음. 그리고 get을 할때 어떤 private 변수를 건드리지않고 조작할 수 있고(salary + bonus), set을 할때는 if 조건문을 이용해서 if(value <0) {print("error");} else {salary = value;} 이런식으로도 설정가능함.	  
 
 visual studio환경에서 🔧는 전부 property임. array의 lenth가 프로퍼티로 구현되어있음.
+  
+  
+5. Indexer //특정값만 바꿔줄 수 있음 파라미터가 있음  	  
+  
+this가 인덱서의 핵심.	 인덱서는 클래스의 프로퍼티라고 생각하면 됌.    
+
+
+public class Record  
+{
+	public int[] temp = new int[5];
+
+	public int this[int index]
+	{
+		get {return temp[index];}
+		set {temp[index] = value;}
+	}
+}
+//라고 선언하면 메인문
+
+start(){
+	record[5] = 5; //로 선언할 수 있게된다. 즉 클래스 자체를 변수처럼 쓸 수 있게됌. 클래스를 생성하고 record.temp[5]이런식으로 안써도 됌.
+	
+}
+
+
 <hr/>  
 
 *unity Attribute*
