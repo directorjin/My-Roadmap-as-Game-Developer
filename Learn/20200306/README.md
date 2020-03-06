@@ -26,6 +26,7 @@ public string this[string key] //this가 인덱서의 핵심.
 	
 	
 5. Property //전체를 바꿔줌 파라미터가 없음. 쓰는 이유는 private로 은닉한 정보를 효과적으로 get하고 set 하기 위해	
+
 public DataTime CacheExpires	
 {	
 	get {return cacheExpires;}	
