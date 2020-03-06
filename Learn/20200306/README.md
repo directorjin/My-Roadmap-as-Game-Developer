@@ -37,7 +37,7 @@ private int salary;
 public int SalaryP  	
 { 	  
 	get{ return salary;}	  
-	set{ salary = value;}//여기서 value는 위에서 선언하지 않았아도 Property에서 자체적으로 구현되어있음.	  
+	private set {salary = value;}//private로 설정해준 이유는 set. 즉 SalaryP = 2;와 같이 Start에서 실행해주는 것은 괜찮지만 은닉성 보장을 위해 다른 클래스에서의 접근은 막아야 하기 때문임. 
 	  
 private int salary;	  
 //쓰는 이유? 	  
@@ -50,5 +50,5 @@ public void SetSalary(int value)
 	salary = value;	  
 }	  
 //이런식으로 구현할 수도 있지만 이렇게 되면 함수자체가 무지막지하게 많아짐. 가독성이 떨어지기 때문에 private로 선언된  	
-변수의 관리는 프로퍼티로 관리하는 것이 좋음.	  
+변수의 관리는 프로퍼티로 관리하는 것이 좋음. 	  
 <hr/>  
