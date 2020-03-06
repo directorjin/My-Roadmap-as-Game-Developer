@@ -17,6 +17,7 @@ Dictionary<string,string> cache; //key도 value도 string타입임.
 	
 	
 <hr>
+
 *important*
 ----------
 
@@ -57,6 +58,10 @@ public void SetSalary(int value)
 
 visual studio환경에서 🔧는 전부 property임. array의 lenth가 프로퍼티로 구현되어있음.
 <hr/>  
+
+*unity Attribute*
+----------
+
 
 1. [SerializeField]
 
