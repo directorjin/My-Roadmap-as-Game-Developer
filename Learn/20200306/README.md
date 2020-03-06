@@ -21,13 +21,9 @@ Dictionary<string,string> cache; //key도 value도 string타입임.
 4. Indexer //특정값만 바꿔줄 수 있음 파라미터가 있음	
 
 public string this[string key] //this가 인덱서의 핵심.	
-
 {	
-
-	get;	
-	
-	set;	
-	
+	get;		
+	set;		
 }	
 	
 	
