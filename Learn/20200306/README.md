@@ -70,6 +70,7 @@ public class Record
 
 start(){
 	record[5] = 5; //로 선언할 수 있게된다. 즉 클래스 자체를 변수처럼 쓸 수 있게됌. 클래스를 생성하고 record.temp[5]이런식으로 안써도 됌.
+	//그리고 배열이 0부터 4까지 있는데 이렇게 start에서 5라고 정해주면 set에서 if(index >= temp.Length) Debug.Log("")로 컴파일은 성공시키고 메세지를 출력하게만 해줄수도있음. 즉 게임이 갑자기 꺼지는 경우는 방지할 수 있음.
 	
 }
 
