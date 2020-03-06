@@ -15,8 +15,11 @@ C#basic
 3. Dictionary //	
 Dictionary<string,string> cache; //key도 value도 string타입임.	
 	
-*important*	
+	
 <hr>
+*important*
+----------
+
 
 4. Indexer //특정값만 바꿔줄 수 있음 파라미터가 있음	  
 
@@ -50,5 +53,5 @@ public void SetSalary(int value)
 	salary = value;	  
 }	  
 //이런식으로 구현할 수도 있지만 이렇게 되면 함수자체가 무지막지하게 많아짐. 가독성이 떨어지기 때문에 private로 선언된  	
-변수의 관리는 프로퍼티로 관리하는 것이 좋음. 	  
+변수의 관리는 프로퍼티로 관리하는 것이 좋음. 그리고 get을 할때 어떤 private 변수를 건드리지않고 조작할 수 있고(salary + bonus), set을 할때는 if 조건문을 이용해서 if(value <0) {print("error");} else {salary = value;} 이런식으로도 설정가능함.	  
 <hr/>  
